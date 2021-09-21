@@ -1,0 +1,28 @@
+A Critical review of “GloVe: Global Vectors for Word Representation”
+Md. Mahadi Hassan
+Analyze, Synthesize and Interpret each work (in the context) in your words in 2 sentences to understand the research problem being studied.
+This paper proposes a specific weighted least squares model that trains on global word-word co-occurrence counts and thus makes efficient use of statistics. The model produces a word vector space with meaningful substructure, as evidenced by its state-of-the-art performance of 75% accuracy on the word analogy dataset.
+Identify 3 strong and weak aspects of the paper.
+Strong points:
+1.	Global and local context has been considered when training word representations which causes overall best performance(75% in word analogy).
+2.	During trainig matrix is not sparse which make it computationally efficient.
+3.	Conversion of skip-gram models objective function into a linear regression problem and mathematical soundness of this conversion.
+Weak Points:
+1.	Creation of global co-occurrence matrix depends on size of corpus and will take a significant amount of time to compute this.
+2.	Transition from equation 6 to equation 7 is not well explained. Specially, How inclusion of b_k restore the symmetry?
+3.	Comparison between previous models is not fair.
+List any 3 foundational paper that is cited in the in this. For each paper, also mention the context of the citation.
+1.	Efficient estimation of word representations in vector space: Introduction of Cbow and Skipgram model as well as evaluation tasks.
+2.	Learning deep architectures for AI: capturing the multi-clustering idea of distributed representations
+3.	Distributed representations of phrases and their compositionality: Baseline results of vectorized word representations.
+List 3 papers that cites this paper and the context.
+1.	BERT: applicable representations of words using neural based methods
+2.	Deep contextualized word representations: applicable representations of words through vector(word embedding).
+3.	Deep Visual-Semantic Alignments for Generating Image Descriptions: Pretrained word vectors.
+Identify 3 possible future direction.
+1.	Paragraph embedding
+2.	Contextual word embedding
+3.	Use this word representation for POS tagging task.
+List down if there is/are any dataset or tools stated in the paper
+1) ConLL-03 testing data, 2) ACE Phase 2 (2001-02) and ACE-2003 data, and 3) MUC7 Formal Run test set.
+
