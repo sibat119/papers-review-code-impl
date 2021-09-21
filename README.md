@@ -1,4 +1,5 @@
 # paper reviews and code implementation
 
-1. Word2vec (Mikolov)
-2. LDA
+1. LDA
+2. Word2vec (Mikolov)
+3. Glove
